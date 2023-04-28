@@ -48,24 +48,6 @@ if __name__ == '__main__':
     adj = adj.tocsr()
     print('adj matrix done.')
 
-    # # 训练集对齐实体id字典
-    # train_dic_lr = {}
-    # for row in range(train.shape[0]):
-    #     l_id, r_id = train[row, 0], train[row, 1]
-    #     train_dic_lr.update({l_id: r_id})
-
-    # print('getting degree')
-    # degree_ts = get_test_pairs_degree(adj, test)
-    # degree_tr = get_test_pairs_degree(adj, ILL[:illL // 10 * Config.seed])\
-    #
-    # with open('train_pairs_degree.json', 'w') as f:
-    #     json.dump(degree_tr, f)
-    #
-    # with open('test_pairs_degree.json', 'w') as f:
-    #     json.dump(degree_ts, f)
-
-    # print('degree done!')
-
     output_layer, loss = build(
         Config.dim, Config.act_func, Config.alpha, Config.beta, Config.gamma, Config.k,
         Config.language[0:2], e, train, KG1 + KG2)
