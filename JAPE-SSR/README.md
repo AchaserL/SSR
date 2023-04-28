@@ -14,6 +14,6 @@ To run SE, please use:
 * Numpy
 
 ## Datasets
-Please create a directory named "data" under "SSR/JAPE-SSR/".
+Please create a directory named "SSR/JAPE-SSR/data/".
 
 The whole datasets can be found in the [here](http://ws.nju.edu.cn/jape/)
